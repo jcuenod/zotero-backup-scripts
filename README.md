@@ -8,7 +8,7 @@ I use systemd to make a daily backup of my Zotero folder. Basically this is life
 
 ## The Shell Script
 
-`backup.sh` should go in your Zotero folder. You can use the Zotero preferences to move your Zotero folder wherever you want (the default appears to be `~/Zotero` which is where mine is).
+`backup.sh` should go in your Zotero folder. You can use the Zotero preferences to move your Zotero folder wherever you want (the default appears to be `~/Zotero` which is where mine is). If you change this, you'll need to modify the `zoterobck.service` file.
 
 Be sure to `git init` and `git remote add` your Zotero folder before running the backup script. It's also not going to prompt you for a password. It's just going to assume your ssh keys are setup.
 

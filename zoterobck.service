@@ -2,4 +2,4 @@
 Description="A script to backup all home dirs to usb drive"
 
 [Service]
-ExecStart=/home/jcuenod/Zotero/backup.sh
+ExecStart=~/Zotero/backup.sh
