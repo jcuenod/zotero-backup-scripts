@@ -32,5 +32,5 @@ Note that the `--user` stuff going on above is to allow the `~/.config` location
 To check logs (I think this works...):
 
 ```
-journalctl -u zoterobck.service
+journalctl -u zoterobck.service --user
 ```
