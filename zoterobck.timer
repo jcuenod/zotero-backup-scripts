@@ -1,0 +1,11 @@
+[Unit]
+Description=Backup Zotero using git
+
+[Timer]
+OnCalendar=daily
+Persistent=true
+Unit=zoterobck.service
+
+[Install]
+WantedBy=timers.target
+
