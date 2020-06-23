@@ -1,5 +1,5 @@
 #! /bin/sh
-cd `dirname "$(readlink -f "$0")"`
+cd `dirname "$0"`
 echo "EXECUTING BACKUP OF `pwd`"
 
 DoBackupFlag=true
