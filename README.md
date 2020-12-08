@@ -16,10 +16,10 @@ Make sure that you allow execution on the shell script. I'm not sure what other 
 
 ## Systemd Files
 
-Put these files (or symlink them) in the right place
+Put these files in the right place (I link them. Note: symlinks don't work with `systemd`):
 
-1. ~/.config/systemd/user/zoterobck.service
-2. ~/.config/systemd/user/zoterobck.timer
+1. ln ./zoterobck.service ~/.config/systemd/user/zoterobck.service
+2. ln ./zoterobck.timer ~/.config/systemd/user/zoterobck.timer
 
 The timer just executes the service which runs the bash script. Is there an easier/better way to do this? Sure there is. Do I care enough to fix the thing that's working (viz. not broken)? No I do not. So more importantly: to query/enable (replace status with whatever you need [like `start`]):
 
