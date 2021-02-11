@@ -34,3 +34,12 @@ To check logs (I think this works...):
 ```
 journalctl -u zoterobck.service --user
 ```
+
+## How to Restore
+
+`zotero.sqlite` is stored in split files (to avoid having to use git's large file storage). These files are generated using the `split` command. To recreate the original `zotero.sqlite` file, run:
+
+```
+cat zotero.sqlite.part* > zotero.sqlite
+```
+
