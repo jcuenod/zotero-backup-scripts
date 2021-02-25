@@ -4,8 +4,9 @@ echo "EXECUTING BACKUP OF `pwd`"
 
 DoBackupFlag=true
 
-rm -f zotero.sqlite.part*
-split -b 25M zotero.sqlite "zotero.sqlite.part"
+rm -f zotero.sql.part*
+sqlite3 zotero.sqlite .dump > zotero.sql
+split -b 25M zotero.sql "zotero.sql.part"
 Line=$(git status | tail -n 1)
 if [ "$Line" = "nothing to commit, working tree clean" ]; then
 	DoBackupFlag=false
